@@ -5,7 +5,7 @@ import {
   MessageBody,
 } from '@nestjs/websockets';
 
-@WebSocketGateway()
+@WebSocketGateway({ cors: true })
 export class PukpukGateway {
   @WebSocketServer() server;
 
